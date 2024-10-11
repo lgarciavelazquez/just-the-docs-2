@@ -1,60 +1,35 @@
 ---
+title: Home
 layout: home
-title: Inicio
-nav_order: 1
 ---
-# Introducción a Docker
-{: .fs-9 }
 
-Desarrollado para el CPR de Badajoz (Abril 2022).
-{: .fs-6 .fw-300 }
+This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
-![docker](sesion1/img/docker.png)
-{: mx-auto}
+If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
 
-## Justificación
+More specifically, the created site:
 
-En los últimos años se ha ido extendiendo el uso de contenedores como elementos esenciales para el uso de aplicaciones en entornos en producción, tanto más cuanto más variable sea la demanda, la frecuencia con la que se actualizan o la necesidad de que funcionen de forma ininterrumpida.
+- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
+- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
 
-Gestionar una aplicación sobre contenedores, que pueda actualizarse rápidamente, que sea escalable o tolerante a fallos, es una tarea compleja que se realiza mediante un software específico. 
+Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
 
-Docker es una empresa (Docker Inc.) que desarrolla un software con el mismo nombre, de forma más concreta el software denominado (docker engine), que ha supuesto una revolución en el desarrollo de software, muy ligado al uso de contenedores de aplicaciones, a las aplicaciones web y al desarrollo ágil.
+[Browse our documentation][Just the Docs] to learn more about how to use this theme.
 
-Docker permite gestionar contenedores a alto nivel, proporcionando todas las capas y funcionalidad adicional y, lo más importante de todo, es que proporciona un nuevo paradigma en la forma de distribuir las aplicaciones, ya que se crean imágenes en contenedores que se distribuyen, de manera que el contenedor que se ha desarrollado es idéntico al que se utiliza en producción y deja de instalarse la aplicación de forma tradicional.
+To get started with creating a site, simply:
 
-En este curso se va introducir el concepto de la puesta en producción de aplicaciones web usando contenedores Docker.
+1. click "[use this template]" to create a GitHub repository
+2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
 
-## Objetivos
+If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
 
-* Conocer las ventajas que nos proporciona el uso de la tecnología de contenedores.
-* Conocer los conceptos principales sobre el despliegue de aplicaciones web utilizando contenedores.
-* Conocer los conceptos fundamentales sobre docker.
-* Trabajar con imágenes docker.
-* Desplegar aplicaciones web sencillas en contenedores.
-* Introducción al uso del almacenamiento en docker.
-* Introducción al uso de la redes en docker.
-* Ser capaz de usar contenedores de terceros y de construir mis propios contenedores.    
-* Creación de imágenes docker.
-* Desplegar escenarios multicontenedor usando docker-compose.
-* Estudiar el ciclo de vida del desarrollo, pruebas y despliegue de aplicaciones utilizando contenedores.
+----
 
-## Contenidos
+[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
-* Sesión 1: Introducción a los contenedores docker
-* Sesión 2: Imágenes Docker
-* Sesión 3: Almacenamiento y Redes en docker
-* Sesión 4: Creando escenarios multicontenedor con docker-compose 
-* Sesión 5: Creación de imágenes en Docker 
-
-## Metodología
-
-El curso está pensado como una secuencia de complejidad creciente, en la que se irán introduciendo los diferentes elementos de Docker, hasta llegar a poder gestionar completamente el ciclo de vida de una aplicación en un entorno en producción.
-
-En el curso se introducirán los conceptos más fundamentales de esta tecnología y se realizarán ejercicios prácticos de todos los elementos estudiados.
-
-En la sesión inicial se hará una presentación un poco más teórica de los conceptos de contenedores y de la tecnología ofrecida por Docker, para a continuación ir estudiando todos los contenidos del curso por medio de la realización de actividades y ejercicios.
-
-Los materiales ofrecidos en el curso serán:
-
-* Una página web con todos los contenidos que vamos a estudiar.
-* Cinco videoconferencias donde se desarrollarán los distintos contenidos estudiados.
+[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
+[GitHub Pages]: https://docs.github.com/en/pages
+[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+[Jekyll]: https://jekyllrb.com
+[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
+[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
